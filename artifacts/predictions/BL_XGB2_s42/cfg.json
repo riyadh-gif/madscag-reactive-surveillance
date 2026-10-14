@@ -1,0 +1,8 @@
+{
+  "variant": {
+    "name": "BL_XGB2",
+    "kind": "baseline"
+  },
+  "seed": 42,
+  "tf": "2.20.0"
+}

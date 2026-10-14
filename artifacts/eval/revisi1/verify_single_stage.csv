@@ -1,0 +1,7 @@
+horizon,array,seeds,max_abs_diff,identical
+1,mu,4,0.0,True
+1,pa,4,0.9295742884278297,False
+2,mu,4,0.0,True
+2,pa,4,0.9503323398530483,False
+3,mu,4,0.0,True
+3,pa,4,0.9221660569310188,False

@@ -1,0 +1,8 @@
+{
+  "variant": {
+    "name": "AB_NOCLIM",
+    "kind": "baseline"
+  },
+  "seed": 7,
+  "tf": "2.20.0"
+}

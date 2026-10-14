@@ -1,0 +1,8 @@
+{
+  "variant": {
+    "name": "AB_LAST1",
+    "kind": "baseline"
+  },
+  "seed": 7,
+  "tf": "2.20.0"
+}

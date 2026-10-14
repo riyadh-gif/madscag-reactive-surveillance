@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "MADSCAG: forecasting on a reactive crop-pest surveillance register"
+type: software
+authors:
+  - family-names: Yuliana
+    given-names: Mike
+  - family-names: Susilo
+    given-names: Arthur
+  - family-names: Lakadimu
+    given-names: Riyadh Hadinah Ahtar
+  - family-names: Rahmawati
+    given-names: Weny Mistarika
+  - family-names: Darmawan
+    given-names: Hendri
+  - family-names: Hadi
+    given-names: Mochammad Zen Samsono
+  - family-names: Dikairono
+    given-names: Rudy
+  - family-names: Dinata
+    given-names: Gallyndra Fatkhu
+  - family-names: Sudibyo
+    given-names: Rahardhita Widyatra
+license: MIT
+preferred-citation:
+  type: article
+  title: "MADSCAG: A Missingness-Aware Early Warning System for Village-Level
+    Rice Pest Surveillance Under Reactive Monitoring"
+  journal: "International Journal of Intelligent Engineering and Systems"
+  year: 2026
+  status: submitted
+  authors:
+    - family-names: Yuliana
+      given-names: Mike
+    - family-names: Susilo
+      given-names: Arthur
+    - family-names: Lakadimu
+      given-names: Riyadh Hadinah Ahtar
+    - family-names: Rahmawati
+      given-names: Weny Mistarika
+    - family-names: Darmawan
+      given-names: Hendri
+    - family-names: Hadi
+      given-names: Mochammad Zen Samsono
+    - family-names: Dikairono
+      given-names: Rudy
+    - family-names: Dinata
+      given-names: Gallyndra Fatkhu
+    - family-names: Sudibyo
+      given-names: Rahardhita Widyatra

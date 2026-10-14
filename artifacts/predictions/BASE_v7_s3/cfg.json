@@ -1,0 +1,30 @@
+{
+  "variant": {
+    "name": "BASE_v7",
+    "zero": [],
+    "zi_b": true,
+    "seeds": [
+      42,
+      1,
+      2,
+      3,
+      7
+    ]
+  },
+  "seed": 3,
+  "batch": 256,
+  "lr": {
+    "warmup": 0.0005,
+    "joint": 0.001,
+    "finetune": 0.0003,
+    "polish": 0.0001
+  },
+  "epochs": {
+    "warmup": 10,
+    "joint": 50,
+    "finetune": 20,
+    "polish": 8
+  },
+  "tf": "2.20.0",
+  "finished": "13:53:27"
+}

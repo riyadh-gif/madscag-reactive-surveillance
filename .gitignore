@@ -1,0 +1,30 @@
+# the de-identification key, which must never be committed
+release_salt.txt
+*.key
+
+# the data bundle, supplied on request under the register's terms
+data/panel_cuaca.csv
+data/desa_sel_final.csv
+data/sample_meta_*.csv
+data/split_index_*.csv
+data/panel_eval.csv
+data/gap_lookup.csv
+data/*.npy
+
+# model weights, offered separately
+**/final.keras
+*.zip
+
+# python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# local
+*.log
+*.bak
+*.rev1bak
+.DS_Store
+Thumbs.db

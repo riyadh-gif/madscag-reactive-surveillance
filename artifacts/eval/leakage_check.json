@@ -1,0 +1,80 @@
+{
+  "shuffle_seed": 20260914,
+  "seeds": [
+    42,
+    1
+  ],
+  "block_sizes": [
+    69004,
+    15850,
+    14649
+  ],
+  "summary": [
+    {
+      "arm": "chrono",
+      "horizon": 1,
+      "auc_a": 0.7891,
+      "ap_a": 0.7695,
+      "mae_b": 0.2548,
+      "auc_b_nz": 0.6506,
+      "mae_c": 0.2628,
+      "skill_c_vs_mean": 0.2123,
+      "skill_c_vs_zero": 0.0487
+    },
+    {
+      "arm": "chrono",
+      "horizon": 2,
+      "auc_a": 0.7195,
+      "ap_a": 0.7058,
+      "mae_b": 0.2593,
+      "auc_b_nz": 0.6151,
+      "mae_c": 0.2625,
+      "skill_c_vs_mean": 0.1995,
+      "skill_c_vs_zero": 0.0462
+    },
+    {
+      "arm": "chrono",
+      "horizon": 3,
+      "auc_a": 0.6889,
+      "ap_a": 0.7006,
+      "mae_b": 0.2525,
+      "auc_b_nz": 0.6038,
+      "mae_c": 0.252,
+      "skill_c_vs_mean": 0.2319,
+      "skill_c_vs_zero": 0.036
+    },
+    {
+      "arm": "random",
+      "horizon": 1,
+      "auc_a": 0.847,
+      "ap_a": 0.7907,
+      "mae_b": 0.3013,
+      "auc_b_nz": 0.669,
+      "mae_c": 0.3101,
+      "skill_c_vs_mean": 0.1625,
+      "skill_c_vs_zero": 0.1032
+    },
+    {
+      "arm": "random",
+      "horizon": 2,
+      "auc_a": 0.8199,
+      "ap_a": 0.7529,
+      "mae_b": 0.302,
+      "auc_b_nz": 0.655,
+      "mae_c": 0.3101,
+      "skill_c_vs_mean": 0.1534,
+      "skill_c_vs_zero": 0.0953
+    },
+    {
+      "arm": "random",
+      "horizon": 3,
+      "auc_a": 0.813,
+      "ap_a": 0.7499,
+      "mae_b": 0.2931,
+      "auc_b_nz": 0.6452,
+      "mae_c": 0.2975,
+      "skill_c_vs_mean": 0.1587,
+      "skill_c_vs_zero": 0.0928
+    }
+  ]
+}

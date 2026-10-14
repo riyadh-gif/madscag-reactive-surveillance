@@ -1,0 +1,20 @@
+# Exact versions of the environment that produced every number in the paper.
+# Python 3.10.8 on Windows, CPU only.
+#
+# xgboost is pinned deliberately: the gradient-boosted stages reproduce
+# byte-for-byte only at a fixed thread count on one machine, because the
+# histogram builder sums per-thread partials in thread order. The scripts
+# set n_jobs=4. On other hardware expect agreement to about 1e-6 rather
+# than exact equality.
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+scikit-learn==1.6.1
+xgboost==3.2.0
+matplotlib==3.10.9
+joblib==1.6.0
+
+# needed only to retrain the recurrent comparison models; every analysis
+# script in this repository runs without them
+tensorflow==2.20.0
+keras==3.12.4

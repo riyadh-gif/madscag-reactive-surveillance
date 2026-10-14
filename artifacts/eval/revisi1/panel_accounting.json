@@ -1,0 +1,39 @@
+{
+  "panel": {
+    "rows": 114757,
+    "villages": 1401,
+    "periods": 156,
+    "t_min": 48483,
+    "t_max": 48638,
+    "rectangular_cells": 218556,
+    "villages_present_every_period": 1,
+    "villages_entering_late": 1400,
+    "villages_leaving_early": 1087,
+    "villages_with_contiguous_block": 1401,
+    "sum_of_spans": 114757,
+    "interior_holes": 0,
+    "observed_rows": 47097,
+    "observed_share_of_rows": 0.41040633686833916,
+    "ltsj_notna": 47097
+  },
+  "splits": [
+    {
+      "bagian": "latih",
+      "t_min": 48483,
+      "t_max": 48593,
+      "rows": 80985
+    },
+    {
+      "bagian": "sahih",
+      "t_min": 48594,
+      "t_max": 48613,
+      "rows": 16952
+    },
+    {
+      "bagian": "uji",
+      "t_min": 48614,
+      "t_max": 48638,
+      "rows": 16820
+    }
+  ]
+}

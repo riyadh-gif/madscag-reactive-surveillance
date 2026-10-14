@@ -1,0 +1,2 @@
+n_labeled,base_rate,auc_harapan,hit_at_k,lift,k
+1474,0.9552238805970149,0.49115444214876036,0.96,1.005,25

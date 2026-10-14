@@ -1,0 +1,8 @@
+{
+  "variant": {
+    "name": "BL_PERSIST",
+    "kind": "baseline"
+  },
+  "seed": 0,
+  "tf": "2.20.0"
+}

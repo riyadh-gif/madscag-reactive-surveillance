@@ -1,0 +1,2 @@
+test,unit,n_units,metric,value_full,value_high_trained,delta,ci_lo,ci_hi,p_wilcoxon,p_ttest,wins,n_rows
+transportability,test period,23,capture C(0.50) in the lowest propensity quartile,0.590043326410768,0.5227183757216792,-0.0673249506890886,-0.11595335421805333,-0.018696547160123866,0.01787281036376953,0.008871442167360738,8,1698

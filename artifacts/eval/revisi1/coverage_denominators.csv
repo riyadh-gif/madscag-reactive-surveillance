@@ -1,0 +1,9 @@
+basis,split,mean_of_period_rates,pooled_rate,periods,rows
+modelling sample (quoted in the manuscript),latih,0.3523730933666229,0.3626891076564789,99,69004.0
+modelling sample (quoted in the manuscript),sahih,0.39323025941848755,0.3924921154975891,20,15850.0
+modelling sample (quoted in the manuscript),uji,0.48149287700653076,0.4635128676891327,23,14649.0
+modelling sample (quoted in the manuscript),all,0.3790413737297058,,142,
+"register, villages present that period",all,0.41463833598328803,0.41040633686833916,156,114757.0
+"register, full 1401-village roster",all,0.21549168176577174,0.21549168176577171,156,114757.0
+"register, first third of periods",drift,0.4235794858692493,,52,
+"register, last third of periods",drift,0.47330971611688494,,52,

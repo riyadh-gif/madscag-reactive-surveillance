@@ -1,0 +1,5 @@
+experiment,fold,train_periods,test_t_min,test_t_max,rows,observed,capture,periods,is_published_split
+rolling_origin,4,99,48614,48636,14649,6790,0.648800059505131,23,True
+rolling_origin,3,76,48591,48613,18292,6984,0.6253241300582886,23,False
+rolling_origin,2,53,48568,48590,19131,7139,0.6476614216099614,23,False
+rolling_origin,1,30,48545,48567,19045,6686,0.6457930647808573,23,False
