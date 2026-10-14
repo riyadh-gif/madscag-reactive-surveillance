@@ -107,3 +107,24 @@ different quantity and is labelled as such wherever it appears.
 | Transport penalty, low-propensity rows | +0.0145 | `code/rev1_transport.py` | `artifacts/eval/revisi1/transport_penalty.csv` |
 | Transport penalty, high-propensity rows | +0.0010 | same | same |
 | Capture in the lowest propensity quartile | 0.5900 full panel against 0.5227, -0.0673, Wilcoxon 0.0179 | same | `artifacts/eval/revisi1/transport_familyC.csv` |
+
+## Figures
+
+Each figure is rendered at full text width with no glyph below 10 pt, as the
+journal requires, and carries no lettered panel label. Both a PDF and a
+400 dpi PNG are in `figures/`.
+
+| Manuscript figure | File | Script | Reads |
+|---|---|---|---|
+| 1 | `fig_reactivity_loop` | `code/figures/make_fig1.py` | the register directly |
+| 2 | `fig_reactivity_gap` | `code/figures/make_fig1.py` | the register directly |
+| 3 | `fig_system` | `code/figures/make_fig2.py` | nothing, it is a schematic |
+| 4 | `fig_capture_curves` | `code/figures/make_fig3.py` | `artifacts/eval/capture_curve.csv` |
+| 5 | `fig_capture_diff` | `code/figures/make_fig3.py` | `artifacts/eval/capture_curve.csv` |
+| 6 | `fig_ablation_attendance` | `code/figures/make_fig4.py` | `artifacts/eval/metrics_full.csv` |
+| 7 | `fig_ablation_error` | `code/figures/make_fig4.py` | `artifacts/eval/metrics_full.csv` |
+
+Figures 1 and 2 are the only ones that need the data bundle: they are drawn
+from the register at draw time so that the gradient they show cannot drift
+away from the numbers quoted in the text. Figures 4 to 7 redraw from the
+stored result files in this repository and need nothing else.
