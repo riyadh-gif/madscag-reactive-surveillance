@@ -11,8 +11,10 @@ data/panel_eval.csv
 data/gap_lookup.csv
 data/*.npy
 
-# model weights, offered separately
-**/final.keras
+# model weights: the released copies live under weights/, everything
+# left in the run directories stays out
+artifacts/**/final.keras
+experiments_v7/**/final.keras
 *.zip
 
 # python
