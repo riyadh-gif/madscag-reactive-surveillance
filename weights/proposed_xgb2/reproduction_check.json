@@ -1,0 +1,89 @@
+{
+  "1": [
+    {
+      "horizon": 1,
+      "max_abs_diff_p": 0.0,
+      "max_abs_diff_mu": 0.0,
+      "best_iteration_A": 68,
+      "best_iteration_B": 69,
+      "bytes_A": 563501,
+      "bytes_B": 556302
+    },
+    {
+      "horizon": 2,
+      "max_abs_diff_p": 0.0,
+      "max_abs_diff_mu": 0.0,
+      "best_iteration_A": 95,
+      "best_iteration_B": 48,
+      "bytes_A": 670054,
+      "bytes_B": 448831
+    },
+    {
+      "horizon": 3,
+      "max_abs_diff_p": 0.0,
+      "max_abs_diff_mu": 0.0,
+      "best_iteration_A": 89,
+      "best_iteration_B": 67,
+      "bytes_A": 634251,
+      "bytes_B": 522530
+    }
+  ],
+  "2": [
+    {
+      "horizon": 1,
+      "max_abs_diff_p": 0.0,
+      "max_abs_diff_mu": 0.0,
+      "best_iteration_A": 75,
+      "best_iteration_B": 67,
+      "bytes_A": 594949,
+      "bytes_B": 546685
+    },
+    {
+      "horizon": 2,
+      "max_abs_diff_p": 0.0,
+      "max_abs_diff_mu": 0.0,
+      "best_iteration_A": 69,
+      "best_iteration_B": 53,
+      "bytes_A": 556572,
+      "bytes_B": 460589
+    },
+    {
+      "horizon": 3,
+      "max_abs_diff_p": 0.0,
+      "max_abs_diff_mu": 0.0,
+      "best_iteration_A": 64,
+      "best_iteration_B": 65,
+      "bytes_A": 534812,
+      "bytes_B": 502434
+    }
+  ],
+  "7": [
+    {
+      "horizon": 1,
+      "max_abs_diff_p": 0.0,
+      "max_abs_diff_mu": 0.0,
+      "best_iteration_A": 68,
+      "best_iteration_B": 74,
+      "bytes_A": 560372,
+      "bytes_B": 570438
+    },
+    {
+      "horizon": 2,
+      "max_abs_diff_p": 0.0,
+      "max_abs_diff_mu": 0.0,
+      "best_iteration_A": 131,
+      "best_iteration_B": 46,
+      "bytes_A": 825392,
+      "bytes_B": 438670
+    },
+    {
+      "horizon": 3,
+      "max_abs_diff_p": 0.0,
+      "max_abs_diff_mu": 0.0,
+      "best_iteration_A": 67,
+      "best_iteration_B": 60,
+      "bytes_A": 544508,
+      "bytes_B": 492446
+    }
+  ]
+}
