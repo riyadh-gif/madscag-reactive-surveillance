@@ -115,6 +115,10 @@ different quantity and is labelled as such wherever it appears.
 Each figure is rendered at full text width with no glyph below 10 pt, as the
 journal requires, and carries no lettered panel label. Both a PDF and a
 400 dpi PNG are in `figures/`.
+| Stage A AUC, village-rate baseline | 0.6621, 0.6479, 0.6352 | `code/rev1_stagea_baseline.py` | `artifacts/eval/revisi1/stagea_baselines.csv` |
+| Stage A lift over that baseline | +0.1277, +0.0716, +0.0543 | same | same |
+| Conformal against a constant band | 90.8%, 90.9%, 91.3% at width 0.700 | `code/rev1_conformal_benchmark.py` | `artifacts/eval/revisi1/conformal_constant_benchmark.json` |
+
 
 | Manuscript figure | File | Script | Reads |
 |---|---|---|---|

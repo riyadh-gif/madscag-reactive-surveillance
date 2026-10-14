@@ -1,0 +1,32 @@
+[
+ {
+  "horizon": 1,
+  "conformal_coverage": 0.9001840942562592,
+  "conformal_width": 0.6548998446875176,
+  "constant_coverage": 0.9078055964653903,
+  "constant_width": 0.699999988079071,
+  "n_test": 6790,
+  "n_calibration": 6221,
+  "n_seeds": 4
+ },
+ {
+  "horizon": 2,
+  "conformal_coverage": 0.903905160390516,
+  "conformal_width": 0.6657237204847126,
+  "constant_coverage": 0.909065550906555,
+  "constant_width": 0.699999988079071,
+  "n_test": 7170,
+  "n_calibration": 6374,
+  "n_seeds": 4
+ },
+ {
+  "horizon": 3,
+  "conformal_coverage": 0.9051396355054412,
+  "conformal_width": 0.6534019373811921,
+  "constant_coverage": 0.9125475285171103,
+  "constant_width": 0.699999988079071,
+  "n_test": 7627,
+  "n_calibration": 6534,
+  "n_seeds": 4
+ }
+]
