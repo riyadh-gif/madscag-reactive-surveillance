@@ -24,7 +24,7 @@ different quantity and is labelled as such wherever it appears.
 | Split boundaries | 48483-48593, 48594-48613, 48614-48638 | same | same |
 | Windows per split | 69,004 / 15,850 / 14,649 | same | `artifacts/eval/revisi1/horizon_accounting.csv` |
 | Observed targets, h=1/2/3 | 6,790 / 7,170 / 7,627 | same | same |
-| Coverage, modelling sample | 0.3524 / 0.3932 / 0.4815, pooled 0.3790 | same | `artifacts/eval/revisi1/coverage_denominators.csv` |
+| Coverage, modelling sample | mean of per-period rates 0.3524 / 0.3932 / 0.4815 per split, 0.3790 over all 142 origin periods; the pooled rates are 0.3627 / 0.3925 / 0.4635 | same | `artifacts/eval/revisi1/coverage_denominators.csv` |
 | Coverage, register basis | 0.4146 against villages present, 0.2155 against the full roster | same | same |
 | Reactivity index, full panel | 2.024, 95% CI [1.996, 2.052] | `code/rev1_verify.py` | `artifacts/eval/revisi1/verify_reactivity.csv` |
 | Reactivity index, test block | 2.671, 95% CI [2.583, 2.762] | same | same |
@@ -61,6 +61,8 @@ different quantity and is labelled as such wherever it appears.
 | Intervals clipped at zero | 99.0% | same | same |
 | Mondrian on predicted-severity quintiles | group coverage 0.905 to 0.875, width 0.505 to 0.858, marginal 0.9001 | same | same |
 | Coverage by regency, h=1 | 0.846 lumajang to 0.929 jember | same | same |
+| Validation targets crossing into the test window | none at h=1, 338 of 6,374 at h=2, 670 of 6,534 at h=3 | `code/rev1_conformal_trim.py` | `artifacts/eval/revisi1/conformal_split_boundary.csv` |
+| Coverage after trimming those rows from the calibration set | 0.9002 / 0.9041 / 0.9085 | same | same |
 
 ## Watchlists and the blind-spot set
 
@@ -79,7 +81,7 @@ different quantity and is labelled as such wherever it appears.
 
 | Number | Value | Script | File |
 |---|---|---|---|
-| Decomposition residual | 0.0 on every observed row | `code/rev1_strata.py` | `artifacts/eval/revisi1/organism_omnibus.csv` |
+| Decomposition residual | at most 7.63e-07 on any observed row | `code/rev1_strata.py` | `artifacts/eval/revisi1/organism_omnibus.csv` |
 | Contributions summing to the headline | +0.00251 | same | `artifacts/eval/revisi1/organism_contributions.csv` |
 | Per organism, h=1 | hdb +0.0107, wbc +0.0098, tikus -0.0087, other -0.0054 | same | same |
 | Omnibus sign-flip permutation | 0.0072 / 0.0036 / 0.0001 | same | `artifacts/eval/revisi1/organism_omnibus.csv` |
