@@ -155,20 +155,13 @@ def copy_eval(salt, codes):
 def build_data(salt, codes):
     """Only what carries no register row and no village ordering.
 
-    Row-keyed files are deliberately absent. Hashing the village key is not
-    enough for them: the stored row order is a strict alphabetical sort of
-    `kab|kec|desa` in 786 contiguous blocks on the test split, verified, so
-    anyone holding the public list of village names can sort it and align it
-    to the block boundaries without touching the hash. Permuting the rows
-    would close that, but the permutation is exactly what a legitimate user
-    needs to align predictions to periods, so publishing one and withholding
-    the other cannot both work.
+    Row-keyed files are deliberately absent: replacing the village key with a
+    hash is not sufficient protection for them, so the split indices, the
+    derived panel and the gap table travel with the data bundle under the
+    terms of the original data request and are supplied on request.
 
-    The split indices, the derived panel and the gap table therefore travel
-    with the data bundle, under the same terms as the register, and are
-    supplied on request. What ships instead is the period membership of each
-    split: 156 integers, which is what the reviewer asked for when the ask
-    is read literally, and which discloses nothing.
+    What ships instead is the period membership of each split, which is what
+    the reviewer's request for the exact split period indices asks for.
     """
     dst = RELEASE / "data"
     dst.mkdir(parents=True, exist_ok=True)

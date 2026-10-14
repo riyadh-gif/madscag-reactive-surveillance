@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 
 plt.rcParams.update({"font.family": "serif",
                      "font.serif": ["Times New Roman", "DejaVu Serif"],
-                     "font.size": 8, "axes.linewidth": 0.7})
+                     "font.size": 11.6, "axes.linewidth": 0.7})
 
 SRC = Path(os.environ["MADSCAG_WORK"]) / "eval_v7" / "capture_curve.csv"
 OUT = Path(os.environ["FIGDIR"])
@@ -33,37 +33,37 @@ style = [
     ("random",      "random allocation",               "0.45",    ":",  1.4, None),
 ]
 
-figA, axA = plt.subplots(figsize=(3.25, 2.70))
-figB, axB = plt.subplots(figsize=(3.25, 2.50))
+figA, axA = plt.subplots(figsize=(6.8, 4.05))
+figB, axB = plt.subplots(figsize=(6.8, 3.85))
 
 for col, lab, c, ls, lw, mk in style:
     axA.plot(f, piv[col], ls, color=c, lw=lw, label=lab,
-             marker=mk, ms=2.6, markevery=2)
+             marker=mk, ms=3.6, markevery=2)
 
 axA.axvline(0.50, color="0.75", lw=0.6, zorder=0)
-axA.annotate("half budget", xy=(0.50, 0.045), fontsize=6.4, color="0.45",
+axA.annotate("half budget", xy=(0.50, 0.045), fontsize=10.0, color="0.45",
              rotation=90, va="bottom", ha="right")
 axA.set_xlabel("patrol budget $f$ (share of observed villages retained)")
 axA.set_ylabel("severity captured $C(f)$")
 axA.set_xlim(0.02, 0.98); axA.set_ylim(0, 1.0)
-axA.legend(frameon=False, fontsize=7, loc="upper left", handlelength=2.4)
-axA.tick_params(labelsize=7, length=2.5)
+axA.legend(frameon=False, fontsize=10.2, loc="upper left", handlelength=2.4)
+axA.tick_params(labelsize=10.2, length=2.5)
 for s in ("top", "right"):
     axA.spines[s].set_visible(False)
 
 diff = (piv["model_sev"] - piv["model_agg"]) * 100
 axB.axhline(0, color="0.6", lw=0.7)
-axB.plot(f, diff, "-", color="#1b4965", lw=1.6, marker="o", ms=2.6)
+axB.plot(f, diff, "-", color="#1b4965", lw=1.6, marker="o", ms=3.6)
 axB.fill_between(f, 0, diff, where=(diff > 0), color="#1b4965", alpha=0.12)
 k = int(np.argmax(diff.to_numpy()))
 axB.set_ylim(min(-0.4, float(diff.min()) - 0.2), float(diff.max()) + 0.75)
 axB.text(0.96, float(diff.max()) + 0.55,
          f"peak {diff.iloc[k]:.1f} points at $f={f[k]:.2f}$",
-         fontsize=6.6, color="#1b4965", ha="right", va="top")
+         fontsize=10.0, color="#1b4965", ha="right", va="top")
 axB.set_xlabel("patrol budget $f$")
 axB.set_ylabel("$C_{\\hat{s}} - C_{\\hat{p}\\hat{s}}$  (points)")
 axB.set_xlim(0.02, 0.98)
-axB.tick_params(labelsize=7, length=2.5)
+axB.tick_params(labelsize=10.2, length=2.5)
 for s in ("top", "right"):
     axB.spines[s].set_visible(False)
 
